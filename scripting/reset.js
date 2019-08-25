@@ -1,5 +1,5 @@
 
 function reset(){
-    $("#btn1").innerHTML = '';
-    //console.log("Fuck00");
+    
+    console.log("Fuck00");
 }
