@@ -12,6 +12,17 @@
       width: 100%;
       padding: 0.75rem;
     }
+    #row-top{
+        border-bottom: 8px solid;
+
+      }
+      #row-bottom{
+        border-top: 8px solid;
+      }
+      #btn2,#btn5,#btn8{
+        border-right: 8px solid;
+        border-left: 8px solid;
+      }
     </style>
 </head>
 
@@ -29,7 +40,7 @@
       </div>
         <table class="table table-bordered">
                 <thead>
-                  <tr>
+                  <tr id="row-top">
                     <th scope="col"><button type="button" class="btn btn-default" id="btn1">1</button></th>
                     <th scope="col"><button type="button" class="btn btn-default" id="btn2">2</button></th>
                     <th scope="col"><button type="button" class="btn btn-default" id="btn3">3</button></th>
@@ -40,7 +51,7 @@
                       <th scope="col"><button type="button" class="btn btn-default" id="btn5">5</button></th>
                       <th scope="col"><button type="button" class="btn btn-default" id="btn6">6</button></th>
                     </tr>
-                    <tr>
+                    <tr id="row-bottom">
                       <th scope="col"><button type="button" class="btn btn-default" id="btn7">7</button></th>
                       <th scope="col"><button type="button" class="btn btn-default" id="btn8">8</button></th>
                       <th scope="col"><button type="button" class="btn btn-default" id="btn9">9</button></th>
