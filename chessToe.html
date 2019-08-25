@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <style>
+    tr .btn{
+      width: 100%;
+      height: 100%;
+      padding: 0.75rem;
+    }
+    #row-top{
+        border-bottom: 8px solid;
+
+      }
+      #row-bottom{
+        border-top: 8px solid;
+      }
+      tr th:nth-child(even){
+        border-right: 8px solid;
+        border-left: 8px solid;
+      }
+      th{
+        height: 112px;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="option.html"><img src="assets/img/back.png" style="width: 30px; height:30px;float: left;"></a><img src="assets/img/tic-tac-toe-logo.png" style="width: 50px;">       
+        </div>
+    </nav>
+    <div class="card text-center">
+        <div class="card-body" id="whose_turn" style="margin: 10px 0">
+           <!-- Display Turn -->
+           X' Turn
+        </div>
+      </div>
+        <table class="table table-bordered">
+                <thead>
+                  <tr id="row-top">
+                    <th scope="col"><button type="button" class="btn btn-default" id="btn00" onclick="onclk('00',0,0)"></button></th>
+                    <th scope="col"><button type="button" class="btn btn-default" id="btn01" onclick="onclk('01',0,1)"></button></th>
+                    <th scope="col"><button type="button" class="btn btn-default" id="btn02" onclick="onclk('02',0,2)"></button></th>
+                  </tr>
+                 <tr>
+                    <th scope="col"><button type="button" class="btn btn-default" id="btn10" onclick="onclk('10',1,0)"></button></th>
+                      <th scope="col"><button type="button" class="btn btn-default" id="btn11" onclick="onclk('11',1,1)"></button></th>                     
+                      <th scope="col"><button type="button" class="btn btn-default" id="btn12" onclick="onclk('12',1,2)"></button></th>
+                    </tr>
+                    <tr id="row-bottom">
+                      <th scope="col"><button type="button" class="btn btn-default" id="btn20" onclick="onclk('20',2,0)"></button></th>
+                      <th scope="col"><button type="button" class="btn btn-default" id="btn21" onclick="onclk('21',2,1)"></button></th>
+                      <th scope="col"><button type="button" class="btn btn-default" id="btn22" onclick="onclk('22',2,2)"></button></th>
+                    </tr>
+                 </thead>
+              </table>
+              <button type="button" class="btn btn-danger width" onclick="reset()">Reset</button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--- Inner file Scripting -->
+    <script src="scripting/reset.js"></script>
+    <script src="scripting/chesttoe.js"></script>
+</body>
+
+</html>
