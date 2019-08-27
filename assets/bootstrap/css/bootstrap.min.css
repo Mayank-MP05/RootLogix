@@ -5573,7 +5573,7 @@ a.badge-dark:focus {
     padding: .75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, .125)
+    /*border: 1px solid rgba(0, 0, 0, .125)*/
 }
 
 .list-group-item:first-child {
@@ -10316,7 +10316,7 @@ a.text-dark:hover {
 }
 @font-face {
     font-family: "funky";
-    src: url("font/kirbyss.ttf") format("truetype");
+    src: url("./../../../font/kirbyss.ttf") format("truetype");
 }
 
 *{

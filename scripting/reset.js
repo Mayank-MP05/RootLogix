@@ -1,27 +1,27 @@
 
 function reset(){
-    
-function clearText()  
-{
+
     /*Input Block*/
-    const b1 = document.getElementById("btn1");
-    const b2 = document.getElementById("btn2");
-    const b3 = document.getElementById("btn3");
-    const b4 = document.getElementById("btn4");
-    const b5 = document.getElementById("btn5");
-    const b6 = document.getElementById("btn6");
-    const b7 = document.getElementById("btn7");
-    const b8 = document.getElementById("btn8");
-    const b9 = document.getElementById("btn9");
+    // Button  Logics 
+    var b00 = document.getElementById("btn00");
+    var b01 = document.getElementById("btn01");
+    var b02 = document.getElementById("btn02");
+    var b10 = document.getElementById("btn10");
+    var b11 = document.getElementById("btn11");
+    var b12 = document.getElementById("btn12");
+    var b20 = document.getElementById("btn20");
+    var b21 = document.getElementById("btn21");
+    var b22 = document.getElementById("btn22");
+
     
-    b1.innerHTML = " ";
-    b2.innerHTML = " ";
-    b3.innerHTML = " ";
-    b4.innerHTML = " ";
-    b5.innerHTML = " ";
-    b6.innerHTML = " ";
-    b7.innerHTML = " ";
-    b8.innerHTML = " ";
-    b9.innerHTML = " ";
-} 
+    b00.innerHTML = " ";
+    b01.innerHTML = " ";
+    b02.innerHTML = " ";
+    b10.innerHTML = " ";
+    b11.innerHTML = " ";
+    b12.innerHTML = " ";
+    b20.innerHTML = " ";
+    b21.innerHTML = " ";
+    b22.innerHTML = " ";
+
 }
