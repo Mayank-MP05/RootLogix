@@ -24,8 +24,29 @@
         border-right: 8px solid;
         border-left: 8px solid;
       }
-      th{
-        height: 112px;
+      tr{
+        min-height: 120px;
+      }
+      tr th{
+        height: 120px;
+        width: 33.333%;
+      }
+      .stone{
+          max-width: 84px;
+      }
+      button{
+        background-size: 100%;
+        background-size: 100px auto;
+      }
+      .btn-winner{
+        color: #fff;
+        background-color: #e6beae;
+        border-color: #e6beae;
+      }
+      .btn-suggest{
+        color: #fff;
+        background-color: #ffdd41;
+        border-color: #ffdd41;
       }
     </style>
 </head>
@@ -66,6 +87,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
     <!--- Inner file Scripting -->
+    <script src="./scripting/checkwin.js"></script>
     <script src="scripting/reset.js"></script>
     <script src="scripting/chesttoe.js"></script>
 </body>
