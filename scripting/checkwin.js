@@ -9,11 +9,8 @@ function checkwin(){
        || (arr[0][2]==1 && arr[1][1]==1 && arr[2][0]==1)){
         winColor();
         console.log("Player 1 Win");
-        initializeArray();
+        //initializeArray();
         restart();
-        
-        
-
 }
     else if((arr[0][0]==2 && arr[0][1]==2 && arr[0][2]==2)
        || (arr[1][0]==2 && arr[1][1]==2 && arr[1][2]==2)
@@ -25,7 +22,7 @@ function checkwin(){
        || (arr[0][2]==2 && arr[1][1]==2 && arr[2][0]==2)){
         winColor();
         console.log("Player 2 Win");
-        initializeArray();
+        //initializeArray();
         restart();
        }
         

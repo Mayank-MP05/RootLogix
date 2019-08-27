@@ -38,10 +38,9 @@ let turn = 6;
 // b00.innerHTML = img_x;
 function onclk(btnid,X,Y){
   //console.log(btnid+' '+X+' '+Y);
+
   let btnName = btnsArr[X][Y];
-    if(turn != 0){
-        
-    
+    if(turn != 0){g
         if(btnName.innerHTML == '' && bclick == true){
             btnName.innerHTML = img_x;
             bclick = false;
@@ -71,7 +70,6 @@ function onclk(btnid,X,Y){
                 dclick = 1;
             }else if(btnBg == suggest && bclick == true){
                 console.log(tempX+''+tempY);
-                console.log("hello");
                 setallcolors();
                 btnName.innerHTML = img_x;
                 arr[tempX][tempY] = 0;
