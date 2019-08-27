@@ -9,7 +9,6 @@ var b20 = document.getElementById("btn20");
 var b21 = document.getElementById("btn21");
 var b22 = document.getElementById("btn22");
 
-
 let bclick = true;
 let dclick = 1;
 let tempX=0;
@@ -40,7 +39,7 @@ function onclk(btnid,X,Y){
   //console.log(btnid+' '+X+' '+Y);
 
   let btnName = btnsArr[X][Y];
-    if(turn != 0){g
+    if(turn != 0){
         if(btnName.innerHTML == '' && bclick == true){
             btnName.innerHTML = img_x;
             bclick = false;
@@ -72,6 +71,7 @@ function onclk(btnid,X,Y){
                 console.log(tempX+''+tempY);
                 setallcolors();
                 btnName.innerHTML = img_x;
+         
                 arr[tempX][tempY] = 0;
                 arr[X][Y] = 1;
                 let btnTemp = btnsArr[tempX][tempY];
