@@ -14,8 +14,8 @@ let dclick = 1;
 let tempX=0;
 let tempY=0;
 let temp = 0;
-// Colors
 
+// Colors
 const defaul = "btn btn-default";
 const suggest = "btn btn-suggest";
 const win = "btn btn-winner";
@@ -31,6 +31,26 @@ let btnsArr = [
     [b20,b21,b22]
 ];
 
+//Timer functions
+const x = 'x';
+const o = 'o';
+let count = 0;
+
+function printcount(y,cstd){
+    let dc = dclick;
+    let bc = bclick;
+    console.log(y);
+    const si = setInterval(function(){
+        cstd++;
+        console.log(cstd);
+        if(cstd >= 5){ 
+            console.log(y+' Wins');
+            cstd = 0;
+            clearInterval(si);
+        }
+    },1000);
+}
+
 var img_x = `<img src="img/cross.png" class="stone">`;
 var img_o = `<img src="img/circle.png" class="stone">`;
 let turn = 6;
@@ -42,6 +62,7 @@ function onclk(btnid,X,Y){
     if(turn != 0){
         if(btnName.innerHTML == '' && bclick == true){
             btnName.innerHTML = img_x;
+            printcount(o,count);
             bclick = false;
             turn--;
             arr[X][Y] = 1;
@@ -49,6 +70,7 @@ function onclk(btnid,X,Y){
             checkwin();
         }else if(btnName.innerHTML == '' && bclick == false){
             btnName.innerHTML = img_o;
+            printcount(o,count);
             bclick = true;
             turn--;
             arr[X][Y] = 2;
@@ -71,7 +93,7 @@ function onclk(btnid,X,Y){
                 console.log(tempX+''+tempY);
                 setallcolors();
                 btnName.innerHTML = img_x;
-         
+                printcount(o,count);
                 arr[tempX][tempY] = 0;
                 arr[X][Y] = 1;
                 let btnTemp = btnsArr[tempX][tempY];
@@ -90,6 +112,7 @@ function onclk(btnid,X,Y){
             }else if(btnBg == suggest && bclick == false){
                 setallcolors();
                 btnName.innerHTML = img_o;
+                printcount(o,count);
                 arr[tempX][tempY] = 0;
                 arr[X][Y] = 2;
                 let btnTemp = btnsArr[tempX][tempY];
