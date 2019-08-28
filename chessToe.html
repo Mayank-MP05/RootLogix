@@ -48,6 +48,31 @@
         background-color: #ffdd41;
         border-color: #ffdd41;
       }
+      .modal-dialog{
+     
+        margin: 170px auto;
+      }
+      .avatar{
+        width: 45px;
+        height: 45px;
+      }
+      .modal-body{
+        display: flex;
+        flex-direction: row;
+      }
+      .modal-body p{
+        margin: 10px;
+      }
+
+      #whose_turn{
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+      }
+      #whose_turn p{
+          margin: 8px;
+      }
     </style>
 </head>
 
@@ -58,9 +83,8 @@
         </div>
     </nav>
     <div class="card text-center">
-        <div class="card-body" id="whose_turn" style="margin: 10px 0">
-           <!-- Display Turn -->
-           X' Turn
+        <div class="card-body text-center" id="whose_turn">
+          
         </div>
       </div>
         <table class="table table-bordered">
@@ -83,6 +107,27 @@
                  </thead>
               </table>
               <button type="button" class="btn btn-danger width" onclick="reset()">Reset</button>
+              <!-- Trigger the modal with a button -->
+
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Victory</h4>
+                  </div>
+                  <div class="modal-body" id="modalBody">
+                    
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="toOptions()">Exit</button>
+                      <button type="button" class="btn btn-success" data-dismiss="modal" onclick="playAgain()">Play Again</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
@@ -90,6 +135,7 @@
     <script src="./scripting/checkwin.js"></script>
     <script src="scripting/reset.js"></script>
     <script src="scripting/chesttoe.js"></script>
+    <script src="scripting/winning.js"></script>
 </body>
 
 </html>

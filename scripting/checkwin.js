@@ -8,9 +8,9 @@ function checkwin(){
        || (arr[0][0]==1 && arr[1][1]==1 && arr[2][2]==1)
        || (arr[0][2]==1 && arr[1][1]==1 && arr[2][0]==1)){
         winColor();
-        console.log("Player 1 Win");
+        winShow(1);
         //initializeArray();
-        restart();
+        //restart();
 }
     else if((arr[0][0]==2 && arr[0][1]==2 && arr[0][2]==2)
        || (arr[1][0]==2 && arr[1][1]==2 && arr[1][2]==2)
@@ -21,9 +21,9 @@ function checkwin(){
        || (arr[0][0]==2 && arr[1][1]==2 && arr[2][2]==2)
        || (arr[0][2]==2 && arr[1][1]==2 && arr[2][0]==2)){
         winColor();
-        console.log("Player 2 Win");
+        winShow(2);
         //initializeArray();
-        restart();
+        //restart();
        }
         
 }
@@ -112,3 +112,7 @@ if( x==0 && y==0){
    if( arr[2][1] == 0 )  btnsArr[2][1].className = suggest;  
 }
 }
+/*
+function winShow(player){
+    console.log(player + "Won");
+}*/

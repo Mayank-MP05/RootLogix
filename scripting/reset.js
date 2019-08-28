@@ -23,6 +23,6 @@ function reset(){
     b20.innerHTML = "";
     b21.innerHTML = "";
     b22.innerHTML = "";
-
+    showTurn('x');
 }
 
