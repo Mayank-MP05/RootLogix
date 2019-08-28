@@ -24,5 +24,16 @@ function reset(){
     b21.innerHTML = "";
     b22.innerHTML = "";
     showTurn('x');
+    arr = [[0,0,0],
+    [0,0,0],
+    [0,0,0]];
+    turn = 0;
+
+    bclick = true;
+    dclick = 1;
+    tempX=0;
+    tempY=0;
+    temp = 0;
+
 }
 
